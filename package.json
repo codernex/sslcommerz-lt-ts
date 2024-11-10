@@ -1,6 +1,6 @@
 {
-  "name": "sslcommerz-lts",
-  "version": "1.0.0",
+  "name": "sslcommerz-lts-types",
+  "version": "1.0.1",
   "description": "TypeScript type definitions for the SSLCommerz library",
   "types": "index.d.ts",
   "repository": {
