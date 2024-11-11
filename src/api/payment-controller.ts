@@ -7,9 +7,9 @@ import type {
   ValidatePaymentResponse,
   PaymentInitData,
   PaymentInitResponse,
-} from '../types/index.js';
-import { httpCall, type RequestMethod } from './fetch.js';
-import { paymentInitDataProcess } from './payment-init-data-process.js';
+} from '../types';
+import { httpCall, type RequestMethod } from './fetch';
+import { paymentInitDataProcess } from './payment-init-data-process';
 
 export class SSLCommerzPayment {
   private readonly baseURL: string;

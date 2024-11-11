@@ -1,7 +1,7 @@
-export * from './payment-init.js';
-export * from './refund.js';
-export * from './transaction-query.js';
-export * from './validate-payment.js';
+export * from './payment-init';
+export * from './refund';
+export * from './transaction-query';
+export * from './validate-payment';
 
 export interface PaymentMethod {
   name: string;

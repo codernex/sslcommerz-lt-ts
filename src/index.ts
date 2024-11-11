@@ -1,1 +1,1 @@
-export * from './api/payment-controller.js';
+export * from './api/payment-controller';
