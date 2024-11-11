@@ -26,7 +26,7 @@ npm i sslcommerz-lts-ts
 
 ### Initialize a Transaction
 ```ts
-import {express} from 'express'
+import express from 'express'
 import {SSLCommerzPayment} from 'sslcommerz-lts-ts'
 
 const store_id = '<your_store_id>'
