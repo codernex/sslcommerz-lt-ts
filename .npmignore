@@ -30,6 +30,9 @@ node_modules
 Dockerfile
 docker-compose.yml
 
+pnpm-lock.yaml
+package-lock.json
+
 # Ignore any other files that should not be published
 README.md  # You might keep this if you want documentation in your npm package
 LICENSE      # Same for LICENSE file, include if necessary

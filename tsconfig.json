@@ -1,18 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS",
-    "strict": true,
+    /* Base Options: */
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,            // Helps with debugging by generating .d.ts.map files
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* If transpiling with TypeScript: */
+    "module": "NodeNext",
     "outDir": "dist",
-    "moduleResolution": "node",        // Ensures compatibility with Node.js module resolution
-    "resolveJsonModule": true,         // If your project uses JSON files
-    "lib": ["ES6", "DOM"]              // Optional, adds additional library support
-  },
-  "include": ["./src/**/*.ts"],
-  "exclude": ["node_modules"]          // Avoid unnecessary compilation of node_modules
+    "rootDir": "src",
+    "sourceMap": true,
+
+    /* AND if you're building for a library: */
+    "declaration": true,
+
+    /* AND if you're building for a library in a monorepo: */
+    "declarationMap": true
+  }
 }

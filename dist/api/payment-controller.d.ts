@@ -1,5 +1,5 @@
-import { InitateRefundBody, InitiateRefundRespone, QueryRefundResponse, TransactionQueryResponse, ValidatePaymentData, ValidatePaymentResponse, PaymentInitData, PaymentInitResponse } from "../types";
-import { RequestMethod } from "./fetch";
+import type { InitateRefundBody, InitiateRefundRespone, QueryRefundResponse, TransactionQueryResponse, ValidatePaymentData, ValidatePaymentResponse, PaymentInitData, PaymentInitResponse } from '../types/index.js';
+import { type RequestMethod } from './fetch.js';
 export declare class SSLCommerzPayment {
     private readonly baseURL;
     private readonly initURL;

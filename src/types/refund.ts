@@ -20,6 +20,6 @@ export interface QueryRefundResponse {
   tran_id: string;
   initiated_on: string;
   refunded_on: string;
-  status: "refunded" | "processing" | "cancelled";
+  status: 'refunded' | 'processing' | 'cancelled';
   refund_ref_id: string;
 }

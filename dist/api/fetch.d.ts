@@ -1,4 +1,4 @@
-export type RequestMethod = "POST" | "PUT" | "PATCH" | "UPDATE" | "GET";
+export type RequestMethod = 'POST' | 'PUT' | 'PATCH' | 'UPDATE' | 'GET';
 interface IFetch<TData extends unknown> {
     url: string;
     method?: RequestMethod;
