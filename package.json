@@ -1,11 +1,12 @@
 {
-  "name": "sslcommerz-lts-types",
-  "version": "1.0.1",
+  "name": "sslcommerz-lts-ts",
+  "version": "0.0.1",
   "description": "TypeScript type definitions for the SSLCommerz library",
-  "types": "index.d.ts",
+  "types": "dist/index.js",
+  "main": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codernex/sslcommerz-lts.git"
+    "url": "https://github.com/codernex/sslcommerz-lts-ts.git"
   },
   "keywords": [
     "sslcommerz",
@@ -16,12 +17,14 @@
   "author": "Borhan Uddin",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.0.0"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "sslcommerz-lts": "^1.1.0"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   }
 }

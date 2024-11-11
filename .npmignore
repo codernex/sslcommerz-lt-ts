@@ -1,3 +1,35 @@
-src/
-.git
-.github/
+.idea
+# Ignore source code
+/src
+
+# Ignore TypeScript configuration and type declaration files (optional)
+tsconfig.json
+tsconfig.build.json  # If you have a separate build config
+
+# Ignore tests and test coverage
+/tests
+*.test.ts
+*.spec.ts
+*.d.ts.map  # Ignore declaration maps if not needed
+
+# Ignore node_modules and other directories you don't need in the package
+node_modules
+
+# Ignore local development files
+*.log
+*.swp
+.idea
+.vscode
+*.iml
+
+# Ignore any build artifacts (if using other build systems, like Rollup, Webpack, etc.)
+/dist
+/build
+
+# If you use Docker, ignore Docker files
+Dockerfile
+docker-compose.yml
+
+# Ignore any other files that should not be published
+README.md  # You might keep this if you want documentation in your npm package
+LICENSE      # Same for LICENSE file, include if necessary

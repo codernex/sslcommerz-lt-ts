@@ -5,6 +5,14 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,            // Helps with debugging by generating .d.ts.map files
+    "outDir": "dist",
+    "moduleResolution": "node",        // Ensures compatibility with Node.js module resolution
+    "resolveJsonModule": true,         // If your project uses JSON files
+    "lib": ["ES6", "DOM"]              // Optional, adds additional library support
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]          // Avoid unnecessary compilation of node_modules
 }

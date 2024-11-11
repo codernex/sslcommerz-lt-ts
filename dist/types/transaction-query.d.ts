@@ -1,0 +1,70 @@
+export interface TransactionQueryResponse {
+    status: string;
+    sessionkey: string;
+    tran_date: string;
+    tran_id: string;
+    val_id: string;
+    amount: string;
+    store_amount: string;
+    bank_tran_id: string;
+    card_type: string;
+    card_no: string;
+    card_issuer: string;
+    card_brand: string;
+    card_issuer_country: string;
+    card_issuer_country_code: string;
+    currency_type: string;
+    currency_amount: string;
+    currency_rate: string;
+    base_fair: string;
+    value_a: string;
+    value_b: string;
+    value_c: string;
+    value_d: string;
+    risk_title: string;
+    risk_level: string;
+    APIConnect: string;
+    validated_on: string;
+    gw_version: string;
+}
+export interface TransactionQueryByIdResponse {
+    APIConnect: string;
+    no_of_trans_found: number;
+    element: SSLCommerzTransactionElement[];
+}
+interface SSLCommerzTransactionElement {
+    val_id: string;
+    status: string;
+    validated_on: string;
+    currency_type: string;
+    currency_amount: string;
+    currency_rate: string;
+    base_fair: string;
+    value_a: string;
+    value_b: string;
+    value_c: string;
+    value_d: string;
+    tran_date: string;
+    tran_id: string;
+    amount: string;
+    store_amount: string;
+    bank_tran_id: string;
+    card_type: string;
+    risk_title: string;
+    risk_level: string;
+    currency: string;
+    bank_gw: string;
+    card_no: string;
+    card_issuer: string;
+    card_brand: string;
+    card_issuer_country: string;
+    card_issuer_country_code: string;
+    gw_version: string;
+    emi_instalment: string;
+    emi_amount: string;
+    emi_description: string;
+    emi_issuer: string;
+    error: string;
+}
+export {};
+//# sourceMappingURL=transaction-query.d.ts.map
